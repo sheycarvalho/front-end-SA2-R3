@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2? family= Roboto & display=swap');
-
 *{
     margin: 0;
     padding: 0;
@@ -14,6 +13,7 @@
     justify-content: space-between;
     align-items: center;
 }
+
 header{
      background-color: #000000;
      height: 80px;
@@ -22,7 +22,7 @@ header{
     height: 76px;
 }
 .menu{
-    width: 660px;
+    width: 690px;
     display: flex;
     justify-content: space-between;
 }
@@ -43,7 +43,6 @@ header{
     height: 600px;
     background-repeat: none;
     background-size: cover;
-
 }
 .secao-jogos{
     background-color: rgb(6, 66, 100);
@@ -168,10 +167,12 @@ header{
     font-size: 24px;
 }
 
-
 @media screen and (max-width: 1200px) {
     .container-grid{
         width: 90%;
+    }
+    .menu{
+        width: 460px;
     }
     .menu a{
         font-size: 16px;
@@ -179,21 +180,26 @@ header{
     .logo{
         width: 200px;
     }
+}
 
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
     .barras{
-        display:inline-block;
+        display: inline-block;
     }  
     .menu{
         display: none;
         flex-direction: column;
-        width: 250px;
+        width: 200px;
         position: absolute;
         top: 0;
-        right: 60px;
+        right: 65px;
         background-color: black;
     }
     .menu a{
         text-align: center;
         padding: 15px;
     }
+    .menu-ativo{
+    display: flex;
+}
+}
